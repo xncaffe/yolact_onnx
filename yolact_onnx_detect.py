@@ -305,9 +305,9 @@ def parse_args():
     parser.add_argument("--dst", type=str, default="", help="detection results save path")
     parser.add_argument("--net_w", type=str, default="576", help="networks input width")
     parser.add_argument("--net_h", type=str, default="576", help="networks input height")
-    parser.add_argument("--conf_thr", type=str, default="0.5", help="networks input height")
-    parser.add_argument("--nms_thr", type=str, default="0.4", help="networks input height")
-    parser.add_argument("--top_k", type=str, default="15", help="networks input height")
+    parser.add_argument("--conf_thr", type=str, default="0.5", help="detect confidence thresh")
+    parser.add_argument("--nms_thr", type=str, default="0.4", help="detection fast nms thresh")
+    parser.add_argument("--top_k", type=str, default="15", help="max detection object number")
     args_param = parser.parse_args()
     return args_param   
 

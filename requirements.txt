@@ -1,0 +1,33 @@
+certifi @ file:///croot/certifi_1665076670883/work/certifi
+coloredlogs==15.0.1
+commonmark==0.9.1
+cycler==0.11.0
+Cython==0.29.32
+-e git+https://github.com/dbolya/yolact.git@57b8f2d95e62e2e649b382f516ab41f949b57239#egg=DCNv2&subdirectory=external/DCNv2
+flatbuffers==22.9.24
+fonttools==4.37.4
+graphviz==0.20.1
+humanfriendly==10.0
+kiwisolver==1.4.4
+matplotlib==3.5.3
+mpmath==1.2.1
+numpy==1.21.6
+onnx==1.12.0
+onnx-simplifier==0.4.8
+onnxruntime==1.12.1
+opencv-python==4.6.0.66
+packaging==21.3
+Pillow==6.2.2
+protobuf==3.20.1
+pycocotools==2.0.5
+Pygments==2.13.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+rich==12.6.0
+six==1.16.0
+sympy==1.10.1
+torch==1.4.0+cu100
+torchsummary==1.5.1
+torchvision==0.5.0+cu100
+torchviz==0.0.2
+typing_extensions==4.4.0
