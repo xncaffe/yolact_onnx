@@ -360,7 +360,8 @@ def main(args):
         yolact.num_class = conf_data.shape[2]
 
         for id, stride in enumerate(yolact.strides):
-            conv_h, conv_w = round(yolact.net_size[2] / float(stride) + 0.005), round(yolact.net_size[1] / float(stride) + 0.005)
+            # conv_h, conv_w = round(yolact.net_size[2] / float(stride) + 0.005), round(yolact.net_size[1] / float(stride) + 0.005)
+            conv_h, conv_w = math.ceil(yolact.net_size[2] / float(stride)), math.ceil(yolact.net_size[1] / float(stride))
             dataprior = yolact.make_prior(conv_h, conv_w, id)
             if id == 0:
                 prior_data = copy.deepcopy(dataprior)
